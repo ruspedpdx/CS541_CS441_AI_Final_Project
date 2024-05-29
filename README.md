@@ -1,21 +1,22 @@
 # CS541_CS441_AI_Final_Project
 
-Objective: Create a capable Linux command line assisstant that leverages RAG and finetuning to bootstrap a small language model to effectively convert natural text to command line instructions
+Objective: Create a capable Linux command line assistant that leverages RAG and finetuning to bootstrap 
+a small language model to effectively convert natural text to command line instructions
 
 Language to use: Python
 Libraries/frameworks: Ragatouille, answer.ai? QLoRA thing? DSPy? ColBERTV2, ARES
 
 ## Relevance to ML
-Using metric based approaches to create effective agents in a complex state space
+Using metric-based approaches to create effective agents in a complex state space
 Investigating NLP techniques through RAG and fine tuning
-Learning about RAG involves understanding retrieval methodologies that hinge on embedding
-contextually rich vectors. A RAG method were using called ColbertV2 tries to achieve this
+Learning about RAG involves understanding retrieval methodologies that hinge on embedding.
+contextually rich vectors. A RAG method we’re using called ColbertV2 tries to achieve this
 by using a transformer text-to-text architecture
 Fine tuning involves optimization algorithms and tradeoffs in terms of hyperparameter selection
-weight preservation and adaptation
+weight preservation and adaptation.
 
 ## Scope
-Will the assisstant attempt to generate commands for any task? How many linux tools will it utilize?
+Will the assistant attempt to generate commands for any task? How many Linux tools will it utilize?
 What will user interaction look like?
 
 ## Which models to use
@@ -24,29 +25,30 @@ Phi-3B-mini
 Many 7B models to choose from maybe Llama 3 8B
 
 ## Attack plan
-Step 1. See if we can get T5 base working really well with generating grep commands
+Step 1. See if we can get T5 base working really well with generating grep commands.
   - Measure performance for out of the box T5 base on grep commands
       - generate representative examples of natural language to grep commands
       - automate testing process
-  - Provide the document or part of it as context(actual file involved)
+  - Provide the document or part of it as context (actual file involved)
   - Use RAG to improve
   - Basic LLM pipeline, could use ReAct Agent
 Step 2. 
   - Iterate over process to improve results that are more representative of actual use cases
 Step 3.
- - More Tools!(maybe a future goal)
+ - More Tools! (maybe a future goal)
 
 Division of tasks
-Russ Pederson:
+Russ Pedersen:
 Tyler Evans:
 David Baker-Robinson:
+Nusrat Ila:
 
 
 ## Definition of tasks
 ### Show me the Data!
 - Documents for RAG system
 - Create dataset for assessing RAG accuracy
-- Question,Answer pairs for fine tune
+- Question-Answer pairs for fine tune
 ### RAG
 - Some kind of technical documentation
 - goal is to find best way to chunk data, and the right combination of technical options and descriptions
@@ -62,9 +64,9 @@ David Baker-Robinson:
 - use DSPy to optimize LLM pipeline
 - Find best agent architecture
 ### AUTOMATION
-- For testing the assisstants ability
-- For data collection(web scraping or synthetic data generation)
+- For testing the assistants ability
+- For data collection (web scraping or synthetic data generation)
 
 ## Future Research
-- What improvements does QDorA lead to vs QLora on agent performance across specific tool usage
+- What improvements does QDoRA lead to vs QLoRA on agent performance across specific tool usage
 - embed entire file system to allow directly integrated natural language look up
