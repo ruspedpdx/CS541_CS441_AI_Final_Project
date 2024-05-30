@@ -37,13 +37,6 @@ Step 2.
 Step 3.
  - More Tools! (maybe a future goal)
 
-Division of tasks
-Russ Pedersen:
-Tyler Evans:
-David Baker-Robinson:
-Nusrat Ila:
-
-
 ## Definition of tasks
 ### Show me the Data!
 - Documents for RAG system
