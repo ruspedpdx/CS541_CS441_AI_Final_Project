@@ -32,8 +32,10 @@ Step 1. See if we can get T5 base working really well with generating grep comma
   - Provide the document or part of it as context (actual file involved)
   - Use RAG to improve
   - Basic LLM pipeline, could use ReAct Agent
+    
 Step 2. 
   - Iterate over process to improve results that are more representative of actual use cases
+
 Step 3. 
  - More Tools! (maybe a future goal)
 
