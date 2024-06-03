@@ -20,12 +20,12 @@ Will the assistant attempt to generate commands for any task? How many Linux too
 What will user interaction look like?
 
 ## Which models to use
-T5 - 100 million parameters 11 billion
-Phi-3B-mini
-Many 7B models to choose from maybe Llama 3 8B
+T5 - 100 million parameters 11 billion  
+Phi-3B-mini  
+Many 7B models to choose from maybe Llama 3 8B  
 
 ## Attack plan
-Step 1. See if we can get T5 base working really well with generating grep commands.
+Step 1. See if we can get T5 base working really well with generating grep commands.  
   - Measure performance for out of the box T5 base on grep commands
       - generate representative examples of natural language to grep commands
       - automate testing process
@@ -34,7 +34,7 @@ Step 1. See if we can get T5 base working really well with generating grep comma
   - Basic LLM pipeline, could use ReAct Agent
 Step 2. 
   - Iterate over process to improve results that are more representative of actual use cases
-Step 3.
+Step 3. 
  - More Tools! (maybe a future goal)
 
 ## Definition of tasks
