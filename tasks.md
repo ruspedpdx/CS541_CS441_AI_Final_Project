@@ -15,6 +15,10 @@
 - Create metric with LangChain for baseline
 - Split into train/test set
 ### Nusrat Ila:
+ investigate different fine tuning methods 
+ Domain-specific fine-tuning
+ Task-specific fine-tuning
+ fine tunes that people have already done that could relate to creating a natural language->grep agent
 ### Kindy:
 - Investigate T5-Flan models context window size
 - create specific examples given our project
