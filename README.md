@@ -6,6 +6,17 @@ a small language model to effectively convert natural text to command line instr
 Language to use: Python
 Libraries/frameworks: Ragatouille, answer.ai? QLoRA thing? DSPy? ColBERTV2, ARES
 
+## Glossary
+- ColBERTV2: A dense retrieval model used for natural language processing tasks, particularly effective in embedding contextually rich vectors using transformer architectures.
+- Hyperparameter selection: The process of choosing the parameters that govern the training process of a machine learning model, such as learning rate, batch size, etc.
+- Llama 3: family of large language models (LLMs), a collection of pretrained and instruction tuned generative text models in 8 and 70B sizes. The Llama 3 instruction tuned models are optimized for dialogue use cases and outperform many of the available open source chat models on common industry benchmarks
+- LLM: Large Language Model.
+- NLP: Natural Language Processing
+- Phi-3-Mini: is a 3.8 billion-parameter, lightweight open model trained using the Phi-3 datasets. This dataset includes both synthetic data and filtered publicly available website data, with an emphasis on high-quality and reasoning-dense properties.
+- QLoRA: A quantization method used in fine-tuning large language models to reduce their size while maintaining performance.
+- RAG: Retrieval-Augmented Generation. A method that combines retrieval of relevant documents or data with generation of text, enhancing the context and relevance of generated responses.
+-  T-5: Text-To-Text Transfer Transformer. A language model developed by Google that treats every NLP problem as a text-to-text problem, making it highly versatile.
+
 ## Relevance to ML
 Using metric-based approaches to create effective agents in a complex state space
 Investigating NLP techniques through RAG and fine tuning
@@ -21,7 +32,7 @@ What will user interaction look like?
 
 ## Which models to use
 T5 - 100 million parameters 11 billion  
-Phi-3B-mini  
+Phi-3B-mini 
 Many 7B models to choose from maybe Llama 3 8B  
 
 ## Attack plan
