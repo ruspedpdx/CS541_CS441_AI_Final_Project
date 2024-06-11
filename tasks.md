@@ -1,3 +1,27 @@
+# Questions that need Answers
+### RAG
+- What documents will be loaded into the RAG system?
+    - Question=Answer Pairs?
+    - GNu docs?
+    - other grep tutorials?
+- Should we try to optimize colbert?
+- Worth it to fix extractChunk file?
+
+### FineTuning
+- Is Kaggle best choice?
+- How much data?
+- Do we want to finetune with context in question answer pairs?
+
+### DSPy
+- Do we want to try using it for finetuning?
+- Will we use the DSPy fewShot optimizers to generate CoT?
+- Could also use ensembles or RandomSearch
+- Best metric to test Rag System?
+
+
+
+
+
 # Division of tasks
 ## 5/26-6/4
 ### Russ Pedersen:
@@ -31,3 +55,14 @@
         - Answer: grep -n "cat" example.txt
     - If we do use T5-flan what is the optimal RAG chunk size
     - How many hop reasoning and/or examples should be included?
+
+
+## 6/10-6/14
+### Nusrat, Tyler, Kindy
+- Create multiple QLorA finetunes
+    - Adjust hyperparameters such as epochs, decay rate, etc.
+    - Could also try different model sizes
+    - Could also try finetune with QWen1.5 1.1B
+- Save the Lora's
+- Are the Lora's easily interchangeable?
+- Run them in multiple environments i.e. CPU-only vs GPU, Kaggle, personal computer, etc

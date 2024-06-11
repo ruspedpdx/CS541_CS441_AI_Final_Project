@@ -2,3 +2,4 @@ env
 synth-env
 .env
 .ipynb_checkpoints
+rag-env
