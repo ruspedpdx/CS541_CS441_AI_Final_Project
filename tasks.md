@@ -66,3 +66,14 @@
 - Save the Lora's
 - Are the Lora's easily interchangeable?
 - Run them in multiple environments i.e. CPU-only vs GPU, Kaggle, personal computer, etc
+### Russ
+- Creating metric for Ragatouille RAG system
+- Loading/Curating documents
+- Testing RagaTouille
+- Help coordinate group members
+### David
+- Generate Synthetic Data
+- Finetuning T5 models with DSPy
+- Working with Russ on integrating RAG
+- Devise agent architecture
+- Evaluating different configurations
