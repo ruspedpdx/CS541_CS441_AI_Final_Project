@@ -1,0 +1,527 @@
+"```
+Jan  5 10:00:00 localhost kernel: [   10.000000] ACPI: EC: [EC] 0x00: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Jan  5 10:00:00 localhost kernel: [   10.000000] ACPI: EC: [EC] 0x01: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Jan  5 10:00:00 localhost kernel: [   10.000000] ACPI: EC: [EC] 0x02: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Jan  5 10:00:00 localhost kernel: [   10.000000] ACPI: EC: [EC] 0x03: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+Jan  5 10:00:00 localhost kernel: [   10.000000] ACPI: EC: [EC] 0x04: 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+```"
+"```
+Aug  1 00:00:00 localhost sshd[2345]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.10  user=test
+Aug  1 00:00:05 localhost sshd[2345]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.1.10  user=test
+Aug  1 00:00:10 localhost sshd[2345]: Accepted password for test from 192.168.1.10 port 52447 ssh2
+Aug  1 00:00:15 localhost sshd[2345]: pam_unix(sshd:session): session opened for user test by (uid=0)
+Aug  1 00:00:20 localhost sshd[2345]: pam_unix(sshd:session): session closed for user test
+```"
+"```
+# ls -lart /home/user/.bash_history
+total 16
+-rw------- 1 user user 1166 Apr 26 15:14 .bash_history
+
+# cat /home/user/.bash_history
+echo ""Hello, world!""
+ls -lart
+pwd
+```"
+"```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+l84304O08yN/c4+W9u/L+J+Q7r/9l9rI/K+0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+"```python
+# This is the main file for the myapp application.
+# It defines the main function that is called when the application is run.
+# The main function imports the necessary modules and then calls the run function.
+# The run function is defined in the app.py file.
+
+from app import run
+
+if __name__ == ""__main__"":
+    run()
+```"
+"```
+Django==3.2.13
+psycopg2-binary==2.9.3
+gunicorn==20.1.0
+Pillow==9.1.1
+django-cors-headers==3.11.0
+```"
+"```
+2023-10-26 14:32:15.123 INFO  Starting application...
+2023-10-26 14:32:15.234 DEBUG Connecting to database...
+2023-10-26 14:32:15.345 INFO  Database connection successful.
+2023-10-26 14:32:15.456 INFO  Application started successfully.
+```"
+"```
+# This is the sshd server system-wide configuration file.  See
+# sshd_config(5) for more information.
+
+# This file is heavily commented.  Please read it and understand its contents
+# before making changes.
+
+# Port 22 is the SSH port.  If you wish to change it you should do so
+# inside the /etc/services file as well.
+Port 22
+
+# Listen to IPv6 addresses
+#ListenAddress ::
+```"
+"```
+# /etc/fstab: static file system information.
+#
+# <file system> <mount point>   <type>  <options>       <dump> <pass>
+# /dev/sda1       /           ext4    defaults        0       1
+# none            /dev/shm       tmpfs   defaults        0       0
+# none            /proc         proc    defaults        0       0
+# none            /sys         sysfs   defaults        0       0
+# none            /var/run      tmpfs   defaults        0       0
+```"
+"```
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+```"
+"```
+root:x:0:root
+daemon:x:1:daemon
+bin:x:2:bin
+sys:x:3:sys
+```"
+"```vim
+"" Set number display
+set number
+
+"" Set syntax highlighting
+syntax on
+
+"" Set tabstop to 4 spaces
+set tabstop=4
+
+"" Set shiftwidth to 4 spaces
+set shiftwidth=4
+
+"" Set expandtab to convert tabs to spaces
+set expandtab
+```"
+"```
+[user]
+    name = Your Name
+    email = your.email@example.com
+
+[core]
+    editor = vim
+```"
+"```
+# Build artifacts
+/build
+/dist
+
+# Local environment configuration
+.env
+
+# IDE files
+*.iml
+*.idea
+.vscode
+
+# Logs
+*.log
+```"
+"```bash
+#!/bin/bash
+
+# Set the backup directory
+BACKUP_DIR=""/home/user/backups""
+
+# Create the backup directory if it doesn't exist
+mkdir -p ""$BACKUP_DIR""
+
+# Backup the home directory
+tar -czvf ""$BACKUP_DIR/home_backup.tar.gz"" /home
+```"
+"```
+172.17.0.1 - - [29/Oct/2023:10:00:00 +0000] ""GET / HTTP/1.1"" 200 185 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36""
+172.17.0.2 - - [29/Oct/2023:10:00:01 +0000] ""GET /favicon.ico HTTP/1.1"" 200 114 ""-"" ""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36""
+172.17.0.3 - - [29/Oct/2023:10:00:02 +0000] ""GET /about HTTP/1.1"" 200 234 ""-"" ""Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36""
+172.17.0.4 - - [29/Oct/2023:10:00:03 +0000] ""GET /contact HTTP/1.1"" 200 185 ""-"" ""Mozilla/5.0 (iPhone; CPU iPhone OS 16_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Mobile/15E148 Safari/605.1.15""
+172.17.0.5 - - [29/Oct/2023:10:00:04 +0000] ""GET /blog HTTP/1.1"" 200 345 ""-"" ""Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Mobile Safari/537.36""
+```"
+"```
+2023/10/27 12:34:56 [error] 12345#12345: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: ""GET / HTTP/1.1"", upstream: ""http://127.0.0.1:8080/"", host: ""localhost""
+2023/10/27 12:34:56 [error] 12345#12345: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: ""GET / HTTP/1.1"", upstream: ""http://127.0.0.1:8080/"", host: ""localhost""
+2023/10/27 12:34:56 [error] 12345#12345: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: ""GET / HTTP/1.1"", upstream: ""http://127.0.0.1:8080/"", host: ""localhost""
+2023/10/27 12:34:56 [error] 12345#12345: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: ""GET / HTTP/1.1"", upstream: ""http://127.0.0.1:8080/"", host: ""localhost""
+2023/10/27 12:34:56 [error] 12345#12345: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: ""GET / HTTP/1.1"", upstream: ""http://127.0.0.1:8080/"", host: ""localhost""
+```"
+"```
+# ~/.profile: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files in /etc/skel are copied to home directories when a user is created.
+
+# This file is not read by bash(1) when it is invoked as a login shell.
+#
+
+# If not running interactively, don't do anything.
+[ -z ""$PS1"" ] && return
+
+# set a fancy prompt (non-color, but works on most terminals)
+PS1='[\u@\h \W]\$ '
+```"
+"```
+This is a sample text document.
+It contains some text.
+The number [digit] is included in the filename.
+This is just a sample.
+```"
+"```
+[Insert your resume content here, limited to 5 lines and 200 tokens]
+```"
+"```
+# Vacation photo with digit 1
+[Image of a beach with palm trees and a person in the background]
+
+# Vacation photo with digit 2
+[Image of a person holding a surfboard in the ocean]
+
+# Vacation photo with digit 3
+[Image of a sunset over the ocean] 
+```"
+"```
+#EXTM3U
+#EXTINF:0,Song Title 1
+/home/user/music/song1.mp3
+#EXTINF:0,Song Title 2
+/home/user/music/song2.mp3
+#EXTINF:0,Song Title 3
+/home/user/music/song3.mp3
+```"
+"```yaml
+# This is the main configuration file for the myapp application.
+# It defines the application's settings, dependencies, and other important parameters.
+# The configuration file is divided into sections, each representing a different aspect of the application.
+
+# Database configuration
+database:
+  host: localhost
+  port: 3306
+  user: myapp_user
+  password: myapp_password
+  name: myapp_db
+```"
+"```json
+{
+  ""database"": {
+    ""host"": ""localhost"",
+    ""port"": 5432,
+    ""name"": ""myapp_db"",
+    ""user"": ""myapp_user"",
+    ""password"": ""myapp_password""
+  },
+  ""logging"": {
+    ""level"": ""INFO"",
+    ""file"": ""myapp.log""
+  }
+}
+```"
+"```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+  <meta charset=""UTF-8"">
+  <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+  <title>Web Application</title>
+  <link rel=""stylesheet"" href=""styles.css"">
+</head>
+<body>
+  <header>
+    <h1>Welcome to our Web Application</h1>
+  </header>
+```"
+"```css
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+```"
+"```javascript
+// Main application file
+
+// Import necessary modules
+const express = require('express');
+const bodyParser = require('body-parser');
+
+// Create Express app
+const app = express();
+
+// Use body-parser middleware
+app.use(bodyParser.json());
+
+// Define routes
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+// Start server
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+```"
+"```rust
+fn main() {
+    println!(""Hello, world!"");
+}
+```"
+"```cpp
+#include <iostream>
+
+int main() {
+  std::cout << ""Hello, world!"" << std::endl;
+  return 0;
+}
+```"
+"```ruby
+require 'sinatra'
+
+get '/' do
+  ""Hello world!""
+end
+```"
+"```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
+```"
+"```json
+{
+  ""name"": ""node_app"",
+  ""version"": ""1.0.0"",
+  ""description"": ""A simple Node.js application"",
+  ""main"": ""index.js"",
+  ""scripts"": {
+    ""start"": ""node index.js""
+  },
+  ""author"": ""Your Name"",
+  ""license"": ""MIT"",
+  ""dependencies"": {
+    ""express"": ""^4.18.2""
+  }
+}
+```"
+"```csv
+Date,Value,Category
+2023-01-01,100,A
+2023-01-02,120,B
+2023-01-03,115,A
+2023-01-04,130,C
+2023-01-05,140,A
+```"
+"```python
+# Import libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Load data
+data = pd.read_csv('data.csv')
+
+# Explore data
+print(data.head())
+
+# Perform analysis
+# ...
+```"
+"```java
+package com.example.mobile_app;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+```"
+"```gradle
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = ""1.7.10""
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath ""com.android.tools.build:gradle:7.3.0""
+        classpath ""org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version""
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+```"
+"```go
+package main
+
+import (
+	""fmt""
+	""os""
+)
+
+func main() {
+	fmt.Println(""Hello, world!"")
+	os.Exit(0)
+}
+```"
+"```php
+<?php
+
+// Include the necessary files
+require_once 'config.php';
+require_once 'database.php';
+
+// Initialize the database connection
+$db = new Database($config['database']);
+
+// Get the requested page
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+
+// Load the appropriate controller
+switch ($page) {
+  case 'home':
+    require_once 'controllers/HomeController.php';
+    $controller = new HomeController($db);
+    break;
+  case 'about':
+    require_once 'controllers/AboutController.php';
+    $controller = new AboutController($db);
+    break;
+  // Add more cases for other pages here
+  default:
+    require_once 'controllers/ErrorController.php';
+    $controller = new ErrorController($db);
+    break;
+}
+
+// Execute the controller's action
+$controller->action();
+
+?>
+```"
+"---
+Path: /home/user/documents/notes.txt
+Description: Personal notes text file
+File:
+# To-Do List
+- Finish writing report for work
+- Schedule dentist appointment
+- Buy groceries
+- Walk the dog
+- Pay bills"
+"---
+Path: ../code/js/README!!.md
+Description: Markdown readme file with unusual name
+File:
+```markdown
+# JavaScript Code
+
+This directory contains JavaScript code for various projects.
+
+## Usage
+
+To use the code, simply include the necessary files in your project.
+
+## Examples
+
+```javascript
+// Example code
+console.log(""Hello, world!"");
+```
+```"
+"---
+Path: ../random_stuff/.hiddenfile
+Description: Hidden file with no extension
+File: 
+This is a hidden file.
+It is not meant to be seen.
+It is important to keep it hidden.
+It is a secret.
+It is a mystery."
+"```bash
+#!/bin/bash
+
+# This is a comment
+
+echo ""Hello, world!""
+
+# This is another comment
+```"
+"```
+# This is a backup file.
+# Do not edit this file directly.
+#
+# This file was created on 2024-03-15 at 14:32:00.
+# It contains data from the following tables:
+```"
+"```
+This is a temporary text file.
+It contains a special character: @
+This is just a sample of the file.
+The actual file might be longer.
+```"

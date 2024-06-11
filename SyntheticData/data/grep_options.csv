@@ -1,0 +1,91 @@
+Options,Description
+-A,Prints NUM lines of trailing context after matching lines
+-a,Treats binary files as text
+-B,Prints NUM lines of leading context before matching lines
+-b,Prints the byte offset within the input file before each line of output
+-C,Prints NUM lines of output context
+-c,Prints only a count of matching lines per FILE
+-D,"Action to take on devices, FIFOs, and sockets"
+-d,Action to take on directories
+-E,Interprets PATTERN as an extended regular expression (ERE)
+-e,Specifies a PATTERN used during the search
+-F,"Interprets PATTERN as a list of fixed strings, separated by newlines"
+-f,Obtains patterns from FILE
+-G,Interprets PATTERN as a basic regular expression (BRE)
+-H,Prints the file name with the matching lines
+-h,Suppresses the file name prefix on output
+-I,Ignores binary files
+-i,Ignores case distinctions
+-L,Prints only names of FILEs with no selected lines
+-l,Prints only names of FILEs with selected lines
+-m,Stops reading a file after NUM matching lines
+-n,Prints line number with output lines
+-o,Prints only the matching part of the lines
+-P,Interprets PATTERN as a Perl regular expression
+-q,Suppresses all normal output
+-R,"Reads all files under each directory, recursively"
+-r,Equivalent to -R
+-s,Suppresses error messages about nonexistent or unreadable files
+-T,Makes sure that the first character of actual line content lies on a tab stop
+-V,Prints version information and exits
+-v,"Inverts the sense of matching, to select non-matching lines"
+-w,Selects only those lines containing matches that form whole words
+-x,Selects only those matches that exactly match the whole line
+-Z,Prints a zero byte after each file name
+-z,"Treats the input as sequences of lines, each terminated by a zero byte"
+-i -n,Case insensitive search displaying line numbers
+-c -i -v,"Count and invert match, case insensitive"
+-w -n,Search for whole words and display line numbers
+-w -l,Search for whole words and list files with matches
+-i -l -H,"Case insensitive search, showing file names with matches"
+-v -H,Invert match and show file names for non-matching lines
+-c -r,Count matches in all files in the directory recursively
+-E -r -n,Use extended regular expressions with line numbers displayed
+-F -x,Search fixed strings that match an entire line
+-B2 -A2,Show 2 lines before and 2 lines after the match
+-r -l,"Recursively list files with matches, showing only file names"
+-P -o -i,"Use Perl regex, display only the part of the line that matches, case insensitive"
+-m10,Stop reading a file after 10 matching lines
+-b -H,Show the byte offset and file names for matches
+-w -c -i,"Count the number of whole word matches, case insensitive"
+-I -H -n,"Ignore binary files, case insensitive, display line numbers"
+-l -v,List files with lines that do not match the pattern
+-L -r,Recursively find files with no matches and list them
+-E -i -l,"Use extended regex, case insensitive, list files with matches"
+-F -o -n,"Search fixed strings, output only the matched parts with line numbers"
+-b -c -i,"Display byte offset, count the matches, case insensitive"
+-E -r -i -l,"Extended regex, recursive, case insensitive, list files with matches"
+-P -c -n,"Perl regex, count matches, show line numbers"
+-c -l -H,"Count lines matching the pattern, show filenames for each match"
+-w -c -i -H,"Whole word, count the number of matches, case insensitive, display filenames"
+-r -i -l -H,"Recursive, case insensitive, list files with matches including filenames"
+-F -x -l -v,"Fixed strings, list files without matches, invert match"
+-w -B3 -A3,"Whole word, show 3 lines before and 3 lines after the match"
+-i -n -Z,"Case insensitive search, append a null byte to the end of each line"
+-l -Z -r,"List files with matches, append a null byte to each output line, recursively"
+-P -v -c,"Perl regex, invert match, count non-matching lines"
+-i -H -o,"Case insensitive, include filename, only show matched parts"
+-E -r -n -B1 -A1,"Extended regex, show line numbers, 1 line before and after match"
+-F -H -b,"Fixed strings, show filenames, byte offsets"
+-m5 -w -c -i,"Stop after 5 matches, whole word, count matches, case insensitive"
+-r -n -C2,"Recursive, show 2 lines of context around matches with line numbers"
+-d skip -l,"Skip directories, list files with matches"
+-E -i -l -H -n,"Use extended regex, case insensitive, include filenames, and show line numbers"
+-F -o -b -n,"Search for fixed strings, only output the matched parts with byte offsets and line numbers"
+-c -r -H,"Recursively count matches in files, include filenames"
+-v -i -n -H,"Invert match, case insensitive, show filenames and line numbers"
+-w -l -i -H,"List files with whole word matches, case insensitive, include filenames"
+-E -r -n -C3,"Use extended regex, show line numbers, and provide 3 lines of context around matches"
+-P -l -H -o,"Use Perl regex, include filenames, and only output matched parts"
+-c -v -i -Z,"Count lines that do not match, case insensitive, append a null byte"
+-E -r -n -B2 -A2,"Use extended regex, show line numbers, 2 lines before and after matches"
+-F -x -l -v -H,"Search for fixed strings, list files without matches, invert match, include filenames"
+-m10 -w -c -i,"Stop after 10 matches, search for whole words, case insensitive"
+-i -H -o -C1,"Case insensitive, include filenames, only show matched parts, 1 line of context"
+-P -b -v -n,"Use Perl regex, show byte offsets, invert match, show line numbers"
+-H -r -n -l,"Include filenames, recursively list files, show line numbers"
+-F -i -H -b,"Search for fixed strings, include filenames, show byte offsets"
+-m3 -w -c -i -L,"Stop after 3 matches, search for whole words, case insensitive, list files without matches"
+-r -i -l -C3,"Recursively list files with matches, include 3 lines of context"
+-v -H -n -B1 -A1,"Invert match, include filenames, show line numbers, 1 line before and after match"
+-F -o -n -b -i,"Fixed strings, output only the matched parts with byte offsets, case insensitive"

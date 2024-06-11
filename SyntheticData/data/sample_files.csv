@@ -1,0 +1,151 @@
+File_Path,Description
+/var/log/syslo?.log,System log file with one character wildcard
+/var/log/auth.lo?,Authentication log file with one character wildcard
+/home/user/.bas?_history,User bash history with one character wildcard
+/home/user/.ssh/id_rs?.pub,SSH public key with one character wildcard
+/home/user/projects/myapp/main.p?,Python application main file with one character wildcard
+/home/user/projects/myapp/requirements.txt,Python project dependencies
+/home/user/projects/myapp/app.log,Application log file
+/etc/ssh/sshd_config,SSH daemon configuration file
+/etc/fstab,File system table
+/etc/passwd,User account information
+/etc/group,Group account information
+/home/user/.vimrc,Vim editor configuration
+/home/user/.gitconfig,Git configuration file
+/home/user/projects/myapp/.gitignore,Git ignore file for myapp project
+/home/user/scripts/backup.sh,Backup script
+/var/log/nginx/access.log,Nginx access log
+/var/log/nginx/error.log,Nginx error log
+/home/user/.profile,User profile script
+/home/user/documents/report[0-9].txt,Sample text document with digit
+/home/user/documents/resume[AB].pdf,Personal resume document with letter A or B
+/home/user/pictures/vacation[1-3].jpg,Vacation photo with digit 1 to 3
+/home/user/music/playlist[!1].m3u,"Music playlist file, excluding 1"
+/home/user/projects/myapp/config[01].yaml,YAML configuration file for myapp with digit 0 or 1
+/home/user/projects/myapp/settings.json,JSON settings file for myapp
+/home/user/projects/webapp/index.html,HTML file for web application
+/home/user/projects/webapp/styles.css,CSS file for web application
+/home/user/projects/webapp/app.js,JavaScript file for web application
+/home/user/projects/rust_app/src/main.rs,Rust main source file
+/home/user/projects/cpp_app/main.cpp,C++ main source file
+/home/user/projects/ruby_app/app.rb,Ruby application file
+/home/user/projects/node_app/server.js,Node.js server file
+/home/user/projects/node_app/package.json,Node.js project dependencies
+/home/user/projects/data_analysis/data.csv,CSV data file for analysis
+/home/user/projects/data_analysis/analysis.ipynb,Jupyter Notebook for data analysis
+/home/user/projects/mobile_app/MainActivity.java,Java source file for Android app
+/home/user/projects/mobile_app/build.gradle,Gradle build file for Android app
+/home/user/projects/go_app/main.go,Go main source file
+/home/user/projects/php_app/index.php,PHP index file for web application
+/home/user/documents/notes.txt,Personal notes text file
+../code/js/README!!.md,Markdown readme file with unusual name
+../random_stuff/.hiddenfile,Hidden file with no extension
+./my_project/scripts/run_me!.sh,Bash script with unusual name
+../backup_2024/old_data!.bak,Backup file with unusual name
+./temp_files/temporary@file.txt,Temporary text file with special character
+../config/!special_config.conf,Configuration file with special character
+./data_analysis/strange_data_#.csv,CSV data file with unusual name
+../docs/unique_doc$%.pdf,PDF document with special characters
+./project_x/code/strange_main!.py,Python script with unusual name
+./project_x/code/helpers/utility@tool.js,JavaScript utility file with special character
+../secret/.super_secret_key,Hidden file with unusual name
+../archive/old_stuff_%.tar.gz,Archived file with special character
+./logs/verbose_#log.log,Log file with unusual name
+../misc_files/extra%notes.txt,Text file with special character
+./bin/executable@@file,Executable file with unusual name
+../html/odd_page@.html,HTML file with special character
+./scripts/!run_this!.pl,Perl script with special characters
+./rust_code/src/weird_main.rs,Rust main source file with unusual name
+./Downloads/school.ipynb,Jupyter Notebook for school projects
+../code/js/uncommon_script$.js,JavaScript file with unusual name
+file1.txt,Simple text file
+data.csv,CSV data file
+log.log,Log file
+script.py,Python script
+notes.md,Markdown notes file
+config.conf,Configuration file
+index.html,HTML file
+style.css,CSS file
+app.js,JavaScript file
+main.rs,Rust source file
+main.cpp,C++ source file
+app.rb,Ruby application file
+server.js,Node.js server file
+settings.json,JSON settings file
+build.gradle,Gradle build file
+main.go,Go source file
+index.php,PHP index file
+notes.txt,Text notes file
+backup.bak,Backup file
+todo.txt,To-do list text file
+README,Readme file with no extension
+LICENSE,License file with no extension
+Makefile,Makefile with no extension
+Dockerfile,Dockerfile with no extension
+Vagrantfile,Vagrantfile with no extension
+config,Configuration file with no extension
+data,Data file with no extension
+logfile,Log file with no extension
+script,Script file with no extension
+todo,To-do list file with no extension
+*.txt,Matches all .txt files
+data*.csv,Matches all .csv files starting with 'data'
+log?.log,Matches log files with a single character after 'log'
+[a-c]*.md,"Matches .md files starting with 'a', 'b', or 'c'"
+config*.conf,Matches .conf files starting with 'config'
+script[0-9].py,Matches script files with a single digit after 'script'
+*.log,Matches all .log files
+index.*,Matches all files starting with 'index'
+main.[ch],Matches files named main.c and main.h
+*.[ch],Matches all .c and .h files
+app*.js,Matches all .js files starting with 'app'
+*.html,Matches all .html files
+*.go,Matches all .go files
+*.rb,Matches all .rb files
+"*.{yml,yaml}",Matches all .yml and .yaml files
+lib*.[ch],Matches all .c and .h files starting with 'lib'
+*.[0-9],Matches all files with a numeric extension
+backup*.*,Matches all files starting with 'backup'
+*.sh,Matches all .sh files
+Docker*,Matches all files starting with 'Docker'
+file1.txt notes.txt,Simple text files
+log.log error.log,Log files
+data.csv results.csv,CSV data files
+script.py utility.py,Python scripts
+notes.md readme.md,Markdown files
+config.conf settings.conf,Configuration files
+index.html about.html,HTML files
+style.css main.css,CSS files
+app.js helper.js,JavaScript files
+main.rs lib.rs,Rust source files
+main.cpp app.rb,C++ and Ruby source files
+server.js settings.json,JavaScript and JSON files
+build.gradle main.go,Gradle build file and Go source file
+index.php notes.txt,PHP and text files
+todo.txt LICENSE,Text and license files
+README Dockerfile,Readme and Dockerfile
+script.py config.conf,Python script and configuration file
+data.csv logfile,CSV data file and log file
+example.txt sample.md,Text and Markdown files
+test.log output.txt,Log and text files
+/home/user/projects/codebase/source/mainfile.cpp /var/www/html/webapp/public/js/app.bundle.js,Main C++ source file and bundled JavaScript file for a web application
+/home/user/documents,User's documents directory
+/home/user/pictures,User's pictures directory
+/home/user/music,User's music directory
+/home/user/videos,User's videos directory
+/home/user/downloads,User's downloads directory
+/home/user/projects,User's projects directory
+/home/user/.ssh,User's SSH keys directory
+/home/user/.config,User's configuration files directory
+/var/log,System log files directory
+/var/www/html,Web server root directory
+/etc,System configuration files directory
+/etc/ssh,SSH daemon configuration directory
+/etc/nginx,Nginx configuration files directory
+/usr/local/bin,Local user binary files directory
+/usr/local/lib,Local user library files directory
+/tmp,Temporary files directory
+/mnt,Mounted filesystems directory
+/dev,Device files directory
+/opt,Optional software directory
+/srv,Service data directory

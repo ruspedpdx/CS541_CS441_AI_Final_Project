@@ -1,0 +1,412 @@
+"```css
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* main.css */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+```"
+"```javascript
+// app.js
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
+
+// helper.js
+function sum(a, b) {
+  return a + b;
+}
+
+module.exports = { sum };
+```"
+"```rust
+fn main() {
+    println!(""Hello, world!"");
+}
+```
+
+```rust
+pub fn add(x: i32, y: i32) -> i32 {
+    x + y
+}
+```"
+"```cpp
+#include <iostream>
+
+int main() {
+  std::cout << ""Hello, world!"" << std::endl;
+  return 0;
+}
+```
+
+```ruby
+require 'sinatra'
+
+get '/' do
+  ""Hello, world!""
+end
+```"
+"```javascript
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
+```
+
+```json
+{
+  ""database"": {
+    ""host"": ""localhost"",
+    ""user"": ""root"",
+    ""password"": """",
+    ""database"": ""my_database""
+  },
+  ""server"": {
+    ""port"": 3000
+  }
+}
+```"
+"```gradle
+plugins {
+    id 'application'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.20'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(""org.jetbrains.kotlin:kotlin-stdlib"")
+    testImplementation(""org.jetbrains.kotlin:kotlin-test"")
+}
+
+application {
+    mainClass = 'com.example.AppKt'
+}
+```
+
+```go
+package main
+
+import (
+	""fmt""
+	""os""
+)
+
+func main() {
+	fmt.Println(""Hello, world!"")
+	fmt.Println(os.Args)
+}
+```"
+"```php
+<?php
+
+// This is a sample PHP file.
+
+echo ""Hello, world!"";
+
+?>
+```
+
+```
+This is a sample text file.
+
+It contains some notes.
+
+You can add more notes here.
+```"
+"```
+# TODO:
+
+## Personal
+
+* Buy groceries
+* Schedule doctor appointment
+* Pay bills
+
+## Work
+
+* Finish report
+* Meet with client
+* Update website
+
+```
+```
+MIT License
+
+Copyright (c) 2023 [Your Name]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```"
+"```
+# README.md
+
+This repository contains the code for a simple Python application that generates random numbers.
+
+## Usage
+
+To run the application, simply execute the following command:
+
+```
+python main.py
+```
+
+## Dockerfile
+
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD [""python"", ""main.py""]
+```"
+"```python
+import os
+import sys
+
+def main():
+    # Load configuration from config.conf
+    config = load_config('config.conf')
+
+    # Perform some actions based on the configuration
+    # ...
+
+    # Print results
+    print(""Results:"")
+    # ...
+
+# Load configuration from a file
+def load_config(config_file):
+    # ...
+```
+
+```
+[general]
+# General configuration settings
+
+# Path to the data directory
+data_dir = /path/to/data
+
+# Logging level
+log_level = INFO
+
+# Other settings
+# ...
+```"
+"```csv
+Date,Time,Event,Details
+2023-10-26,10:00:00,Login,User ""john.doe"" logged in from IP address 192.168.1.10
+2023-10-26,10:05:00,File Access,User ""john.doe"" accessed file ""report.pdf""
+2023-10-26,10:10:00,Logout,User ""john.doe"" logged out
+```
+
+```
+Oct 26 10:00:00 server1 systemd[1]: Starting LSB: System logging daemon...
+Oct 26 10:00:00 server1 rsyslogd[2819]: imuxsock: Got a message from /dev/log
+Oct 26 10:00:00 server1 rsyslogd[2819]: imuxsock: Got a message from /dev/log
+Oct 26 10:00:00 server1 systemd[1]: Started LSB: System logging daemon.
+```"
+"```
+This is an example text file.
+
+It contains a few lines of text.
+
+This is the third line.
+
+And this is the fourth line.
+
+This is the final line of the example text file.
+```"
+"```
+INFO: 2023-10-26 14:32:15,456 - Starting process...
+DEBUG: 2023-10-26 14:32:15,457 - Loading configuration...
+INFO: 2023-10-26 14:32:15,458 - Configuration loaded successfully.
+...
+
+This is a sample text file.
+It contains some lines of text.
+It can be used for various purposes.
+For example, it can be used to store data.
+Or it can be used to write a story.
+```"
+"```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int main() {
+  cout << ""Hello, world!"" << endl;
+  return 0;
+}
+```
+
+```javascript
+(function() {
+  'use strict';
+
+  angular.module('app', [])
+    .controller('AppController', function() {
+      // ...
+    });
+})();
+```"
+"```
+# This is a sample document.
+## This is a heading.
+This is some text.
+This is another line of text.
+This is a final line of text.
+```"
+"```
+# This is a sample image file.
+# It may not be representative of the actual content of the directory.
+# This is just a placeholder for demonstration purposes.
+
+from PIL import Image
+import numpy as np
+
+# Load the image
+image = Image.open('image.jpg')
+
+# Convert the image to a numpy array
+image_array = np.array(image)
+
+# Perform some image processing
+# ...
+
+# Save the processed image
+Image.fromarray(image_array).save('processed_image.jpg')
+```"
+"```
+# This is a sample playlist
+# Created on 2023-10-26
+# by user
+# 
+# Enjoy!
+
+```"
+"```
+# This is a sample video file.
+# You can see the video here: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+# Please enjoy!
+# 
+# This is a sample video file.
+# You can see the video here: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+```"
+"```
+# This is a sample file.
+# It is used to demonstrate the functionality of the code.
+# The code is designed to be used in a variety of situations.
+# It is important to note that the code is not perfect.
+# There may be bugs or errors in the code.
+```"
+"---
+Path: /home/user/projects
+Description: User's projects directory
+File: 
+```
+# This is a sample project directory.
+# It may contain various files and subdirectories.
+# The actual content will depend on the specific projects.
+# For example, it could include code, documentation, data, etc.
+# This is just a placeholder for demonstration purposes.
+```"
+"```
+# This is an example of a public key.
+# You can use it to connect to this computer from another computer.
+# The public key is used to verify the identity of the computer you are connecting to.
+# The private key is used to encrypt the connection between your computer and the remote computer.
+# You should keep your private key safe and secure.
+```"
+"```
+# This file is used by the system to store user configuration.
+# It is not intended to be edited directly.
+
+# User's default application settings.
+[Default Applications]
+# Default application for opening text files.
+text/plain=gedit.desktop
+# Default application for opening image files.
+image/jpeg=gthumb.desktop
+```"
+"```
+Jan  5 10:52:10 localhost systemd[1]: Starting LSB: System logging daemon...
+Jan  5 10:52:10 localhost systemd[1]: Started LSB: System logging daemon.
+Jan  5 10:52:10 localhost rsyslogd[285]: imuxsock: Got connection from PID 288
+Jan  5 10:52:10 localhost rsyslogd[285]: imuxsock: Got connection from PID 289
+Jan  5 10:52:10 localhost rsyslogd[285]: imuxsock: Got connection from PID 290
+```"
+"```
+# This is a sample index.php file
+<?php
+
+// This is a comment
+
+?>
+```"
+"```
+# /etc/hosts
+127.0.0.1   localhost localhost.localdomain
+::1         localhost localhost.localdomain
+
+# /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+
+# /etc/shadow
+root:$6$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$...$..."
+"```
+# Subsystem sftp /usr/lib/openssh/sftp-server
+# Port 22
+# Protocol 2
+# Ciphers aes128-cbc,aes192-cbc,aes256-cbc,arcfour256,arcfour128,blowfish-cbc
+# MACs hmac-sha2-256,hmac-sha2-512,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-md5
+
+```"
