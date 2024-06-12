@@ -79,7 +79,9 @@ print(f"Evaluation results: {eval_results}")
 
 model.save_pretrained("./pre-tuned-model")
 tokenizer.save_pretrained("./fine-tuned-model")
-torch.save(model.state_dict(), "./fine-tuned-model")
+
+# ./fine-tuned-model_    this file needs to be created before
+torch.save(model.state_dict(), "./fine-tuned-model_")
 
 
 
