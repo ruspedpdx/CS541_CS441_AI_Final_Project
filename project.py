@@ -1,19 +1,25 @@
 import torch
-import pandas as pd
-from datasets import load_dataset
-from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
+from torch.optim import AdamW
+from datasets import load_dataset, Dataset
+from transformers import AutoTokenizer,T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments, get_scheduler, BitsAndBytesConfig, GenerationConfig, AutoModelForSeq2SeqLM, DataCollatorForSeq2Seq
+from tqdm.auto import tqdm
+import bitsandbytes as bnb
+from peft import PeftModel, PeftConfig, prepare_model_for_kbit_training, LoraConfig, get_peft_model 
 
-device = torch.device("cuda")
-print("CUDA available:", torch.cuda.is_available())
-if torch.cuda.is_available():
-    print("CUDA version:", torch.version.cuda)
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+checkpoint = "google/flan-t5-small"
 
-# Load the CSV file into a Hugging Face Dataset
-dataset = load_dataset('csv', data_files='data.csv')
+# lora_config is effective only when peft_combine = False
+lora_config = LoraConfig( r=8, lora_alpha=512, target_modules=['q', 'v'], lora_dropout=0.01, bias="none", task_type= "SEQ_2_SEQ_LM" )#,modules_to_save=["lm_head"])
 
-#Tokenize
-tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-small")
+# dataset = load_dataset("SKT27182/Preprocessed_OpenOrca", streaming=True)
+Dataset = load_dataset('csv', data_files='data.csv')
 
+data = { "command":[], "description": []}
+            
+tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+tokenizer.model_max_length
+            
 def preprocess_function(examples):
     inputs = examples["command"]
     targets = examples["description"]
@@ -26,18 +32,33 @@ def preprocess_function(examples):
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
 
-tokenized_dataset = dataset.map(preprocess_function, batched=True)
+tokenized_dataset = Dataset.map(preprocess_function, batched=True)
 
-#model
-model = T5ForConditionalGeneration.from_pretrained("google/flan-t5-small")
+tokenized_dataset.set_format("torch")
+ 
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16
+)
+
+model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, quantization_config=bnb_config, device_map={"":0}, trust_remote_code=True)
+model.gradient_checkpointing_enable()
+model = prepare_model_for_kbit_training(model)
+model = get_peft_model(model, lora_config)
+
+print(model.base_model.model.lm_head.weight.requires_grad)
+model.base_model.model.lm_head.weight.requires_grad = True
+print(model.base_model.model.lm_head.weight.requires_grad)
 
 training_args = TrainingArguments(
     output_dir="./results",
     num_train_epochs=1,
-    per_device_train_batch_size=8,
-    per_device_eval_batch_size=8,
+    per_device_train_batch_size=60,
+    per_device_eval_batch_size=60,
     warmup_steps=500,
-    weight_decay=0.01,
+    weight_decay=0.8,
     logging_dir="./logs",
     logging_steps=10,
     save_steps=1000,
@@ -58,6 +79,12 @@ print(f"Evaluation results: {eval_results}")
 
 model.save_pretrained("./fine-tuned-model")
 tokenizer.save_pretrained("./fine-tuned-model")
+
+
+
+
+
+
 
 
 
