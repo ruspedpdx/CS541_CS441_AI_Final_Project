@@ -77,8 +77,9 @@ trainer.train()
 eval_results = trainer.evaluate()
 print(f"Evaluation results: {eval_results}")
 
-model.save_pretrained("./fine-tuned-model")
+model.save_pretrained("./pre-tuned-model")
 tokenizer.save_pretrained("./fine-tuned-model")
+torch.save(model.state_dict(), "./fine-tuned-model")
 
 
 
