@@ -9,10 +9,9 @@ from peft import PeftModel, PeftConfig, prepare_model_for_kbit_training, LoraCon
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 checkpoint = "google/flan-t5-small"
 
-# lora_config is effective only when peft_combine = False
+# lora_config 
 lora_config = LoraConfig( r=8, lora_alpha=512, target_modules=['q', 'v'], lora_dropout=0.01, bias="none", task_type= "SEQ_2_SEQ_LM" )#,modules_to_save=["lm_head"])
 
-# dataset = load_dataset("SKT27182/Preprocessed_OpenOrca", streaming=True)
 Dataset = load_dataset('csv', data_files='data.csv')
 
 data = { "command":[], "description": []}
