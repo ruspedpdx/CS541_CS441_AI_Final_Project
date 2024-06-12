@@ -1,0 +1,159 @@
+File_Path,Description
+/var/log/syslo?.log,A system log file which tracks all activity on your computer and is useful for troubleshooting and detecting resource overload.
+/var/log/auth.lo?,"Authentication log file. It is useful for recording system authentication attempts, identifying intrusion attempts and capturing relevant log events."
+/home/user/.bas?_history,View all instances of a specific command run in bash by using the '?' character as a wildcard. Useful for finding typos.
+/home/user/.ssh/id_rs?.pub,The SSH public key with one character wildcard allows for automated management of access to secure systems using a single key.
+/home/user/projects/myapp/main.p?,Main application responsible for prompting a user for input and parsing the specified file to find a file at a specified location.
+/home/user/projects/myapp/requirements.txt,These fields list all the packages that need to be installed in order for the Python project to run. They are especially useful for easily setting up the project on a new machine.
+/home/user/projects/myapp/app.log,"As a system administrator, it would be useful to quickly access the log file to identify the root cause of an issue."
+/etc/ssh/sshd_config,"This file allows users to configure their server and client applications to make SSH connections to their server, typically over the port 22."
+/etc/fstab,"A file system table is a data structure that maps file names to their corresponding disk locations.
+It is commonly used by operating systems to manage file access and storage on a hard drive."
+/etc/passwd,"Keep track of account information such as creating, updating, and deleting accounts."
+/etc/group,"This file contains detailed account information for a specific group of users,
+including their contact details, permissions, and assigned responsibilities."
+/home/user/.vimrc,A configuration file for Vim editor which contains some user preferences and and custom key bindings.
+/home/user/.gitconfig,"The .gitconfig is a common extension file used to store username and email configuration, facilitating quick commits."
+/home/user/projects/myapp/.gitignore,Ignore myapp build files and executable dependencies that may vary between machines or operating systems.
+/home/user/scripts/backup.sh,Backup script periodically creates backup of local files. Enables users to restore specific changes.
+/var/log/nginx/access.log,A file that contains requests to an Nginx web server. Use to analyze website traffic and understand popular pages and requested resources.
+/var/log/nginx/error.log,"The Nginx error log tracks errors with requests and connections, providing detailed information needed for troubleshooting and debugging websites."
+/home/user/.profile,Process input to a user profile to generate a. signature e-mails.
+/home/user/documents/report[0-9].txt,This file would usefully store receipts from a store instead of paper.
+/home/user/documents/resume[AB].pdf,"Use letter A for formal business applications, and letter B for creative professions like graphic design or writing."
+/home/user/pictures/vacation[1-3].jpg,"A photo of a group of friends on vacation, with numbers 1 to 3 printed on the corner for easy identification when sorting pictures at home."
+/home/user/music/playlist[!1].m3u,"A file that contains a list of songs with associated metadata including title, artist, length. Useful for organizing a workout playlist."
+/home/user/projects/myapp/config[01].yaml,"This YAML file is used for configuring myapp and can optionally enable or disable certain features using 0 or 1, such as debugging."
+/home/user/projects/myapp/settings.json,A file containing JSON that sets fields in myapp. Use to configure custom features in myapp.
+/home/user/projects/webapp/index.html,The HTML file contains all the necessary markup for launching our new e-commerce site.
+/home/user/projects/webapp/styles.css,"A file that contains styles for a web application, allowing you to customize the look and feel as needed."
+/home/user/projects/webapp/app.js,"This file contains all the JavaScript code necessary for creating and maintaining a user-friendly web application. The file is created and uploaded to a server to provide the necessary functionality, such as dynamic content, user interaction, and form validation, that makes the user experience smooth and interactive."
+/home/user/projects/rust_app/src/main.rs,"The main source file in a Rust project is where the program starts executing. A basic ""Hello world"" program is written here."
+/home/user/projects/cpp_app/main.cpp,The main source file for a C++ application. Contains program entry point and function implementations.
+/home/user/projects/ruby_app/app.rb,This file houses the code that allows users to interact with our app in a user-friendly way.
+/home/user/projects/node_app/server.js,This is the server file that is used to set up the back-end of the project. It contains all the necessary code to connect the server to a database and handle all client requests.
+/home/user/projects/node_app/package.json,Keeping all dependencies up to date is vital in avoiding bugs and security issues within a Node.js project.
+/home/user/projects/data_analysis/data.csv,A CSV data file containing customer transaction history. Use for analyzing customer spending trends.
+/home/user/projects/data_analysis/analysis.ipynb,Jupyter Notebook for examining stock market trends in detail using data analysis tools.
+/home/user/projects/mobile_app/MainActivity.java,Java file for a shopping app. Contains product search and sorting algorithms.
+/home/user/projects/mobile_app/build.gradle,"The Gradle build file for an Android app compiles code, manages dependencies, and creates a release."
+/home/user/projects/go_app/main.go,This is the main source file for the Go programming language. It can be used to write and run Go programs.
+/home/user/projects/php_app/index.php,"The PHP index file is essential to every web app, serving as the starting point for all pages and processes in the app's codebase."
+/home/user/documents/notes.txt,File used for personal notes to track daily tasks. Help keep organized and on track with goals.
+../code/js/README!!.md,"""README.md"" is a markdown file with instructions for developers to use code."
+../random_stuff/.hiddenfile,This file is a hidden file without an extension. It might be used for important system settings or confidential information.
+./my_project/scripts/run_me!.sh,"A Bash script, unique in its method of acquiring and manipulating data for relocating large files quickly."
+../backup_2024/old_data!.bak,"This file is a backup that was created with a non-standard format, which can only be accessed using advanced file recovery tools. It contains information about file metadata and is ideal for forensic analysis."
+./temp_files/temporary@file.txt,"Sometimes text files contains special characters that are used to notify the computer that certain actions need to be taken.
+This file is especially useful during very specific cases of programmatic automation and data processing."
+../config/!special_config.conf,Used for setting up password verification and user-specific configurations. Ideal for ensuring user security.
+./data_analysis/strange_data_#.csv,The file contains data in columnar format separated by commas. Useful for processing user input in a standalone application.
+../docs/unique_doc$%.pdf,"This PDF document contains special characters such as accents and ligatures, making it ideal for printing multilingual documents or foreign language textbooks."
+./project_x/code/strange_main!.py,This script is used to securely password-protect files within a zipped archive.
+./project_x/code/helpers/utility@tool.js,This file includes functions to encode and decode special characters to prevent cross-site scripting attacks while passing values to the server.
+../secret/.super_secret_key,This file is named in a way that is not immediately apparent. It could be used to store confidential information in plain sight.
+../archive/old_stuff_%.tar.gz,"This archived file contains data on customer addresses. Special characters are included in the file, so pre-processing will be required before analysis."
+./logs/verbose_#log.log,Inadequately named log file requires parsing for specific content with less than 20 words.
+../misc_files/extra%notes.txt,This text file is useful for programming as it allows special characters which can be used for unique program logic.
+./bin/executable@@file,This file is an executable with an unconventional name. It is responsible for executing a specific application on startup.
+../html/odd_page@.html,"Used in web development, the HTML file with special character allows developers to display additional symbols in web content."
+./scripts/!run_this!.pl,"This Perl script contains special characters, such as backslashes and apostrophes, and parses text to extract key information."
+./rust_code/src/weird_main.rs,"This file contains the entry point for a Rust console application, including unnamed command-line arguments."
+./Downloads/school.ipynb,Create dynamic academic projects with code in a virtual environment for dynamic code-based projects in a user-friendly platform.
+../code/js/uncommon_script$.js,"This JavaScript file has a name that is not intuitive, making it difficult to identify its purpose and use in the project. It may cause confusion and errors during development."
+file1.txt,A file useful for storing lists or notes of any kind. Intuitive and easy-to-use for keeping track of ideas and tasks.
+data.csv,A CSV data file contains a structured data set that can be easily imported by a spreadsheet program for data analysis.
+log.log,The log file stores a record of all changes made to the program. Helpful for troubleshooting user error.
+script.py,A python script file is a text file containing instructions for the computer to execute Python code. These scripts may be used to automate repetitive tasks.
+notes.md,Take notes in Markdown format for quick formatting and organization in any project.
+config.conf,Stores a list of configuration parameters used for a web application. Adjusts app behavior with simple edits.
+index.html,This HTML file is designed to display a simple and well-formatted web page. It can be used to create clean and structured content for any website.
+style.css,"A Cascading Style Sheet file that helps define fonts, colors and styles for a specific webpage. <br>This helps ensure styling consistency across the entire webpage."
+app.js,This file is used to write scripts for webpages. Use it to make interactive elements like buttons.
+main.rs,"Used for building, testing, and running Rust code. Handles compilation, type checking, and linking."
+main.cpp,This file extension is used by the C++ programming language to hold source code that would be compiled into an executable program.
+app.rb,This file houses the code that allows users to interact with our app in a user-friendly way.
+server.js,This is the server file that is used to set up the back-end of the project. It contains all the necessary code to connect the server to a database and handle all client requests.
+settings.json,"The JSON settings file contains the basic settings needed for the execution of a program. Examples include language locale, font, and size."
+build.gradle,The Gradle build file is a text file that contains a script for automating the build process of a software project.
+main.go,"This file contains code written in Go, which is a programming language used to manage large software projects."
+index.php,"This file is used to provide a list of links to various parts of a website, providing a user-friendly and organized interface for navigation purposes."
+notes.txt,Write up notes for a class in a text file so you can quickly reference them on the computer later.
+backup.bak,A backup file is a copy of a file saved in case the original is lost or damaged. It can be used to restore data in the event of a system failure or accidental deletion.
+todo.txt,"A text file storing a to-do list allows the user to access, edit, and add to their tasks throughout the day. 
+The file is easily portable and can be shared with others for collaborative tasks."
+README,This readme file is recommended to be used for writing instructions on how to install and use a piece of software.
+LICENSE,This file contains the licensing information for a software product. It is important to read it before installing the software.
+Makefile,A simple Makefile that uses pattern matching rules to build and clean files in the same directory.
+Dockerfile,A dockerfile with no extension is a container file that contains all the instructions to build and run an application image.
+Vagrantfile,"""A file that allows you to write scripts and automate the creation of virtual machines."" You can use this file to create an entire dev environment with just one command."
+config,"Use to store website settings, like color scheme. Accessed via a back-end dashboard for easy updates."
+data,Use this file to store data for a project when you do not intend to access it directly.
+logfile,"A log file with no extension, typically used for storing application or operating system logs. Useful for debugging and troubleshooting."
+script,This script file contains JavaScript for a web app and is used to manage the signup process.
+todo,This is a file that may be edited to track daily tasks or projects efficiently without any extra bells and whistles.
+*.txt,"This regex would useful for identifying all text-based files, such as readme files or config files."
+data*.csv,This keywords will match all .csv files starting with 'data' allowing you to narrow down your selection of files.
+log?.log,"""Organize all logs with character type to easily analyze errors. """
+[a-c]*.md,"This matches all markdown files starting with the letters 'a', 'b', or 'c', usually used for organizing files alphabetically."
+config*.conf,.conf files starting with 'config' provide configurable options from a given set of values.
+script[0-9].py,Used to find script files with a specific format in order to build a plugin. Pro tip: Use a plugin if you find yourself searching for script files often.
+*.log,"I want to retrieve all logs from my server, regardless of the log program formatting."
+index.*,Useful when finding the root directory in a repository.
+main.[ch],The file specifies the entry point for as well as the header file for your project's C files.
+*.[ch],"This file contains complete information about all C and C++ source codes and header files. Use this file to extract source code and generate syntax-tree, control-flow and data-flow analysis for applications, learning and mining task."
+app*.js,This is a file named 'app' to the left of the file extension. E.g. app.js or app-image.js. It is used to group and organize all of the app's JavaScript files.
+*.html,The default configuration for serving html files. Use to quickly host a simple website with HTML content.
+*.go,```This regex patterns matches all ```.go``` files. It is useful for quickly finding all go source files in a project for refactoring or debugging purposes.
+*.rb,This regular expression matches all Ruby files. This is useful when searching for Ruby files in a specific directory.
+"*.{yml,yaml}","Regex
+Match the file-extension in a folder of files, and flag those having such extension."
+lib*.[ch],A regex to use when creating a library of C or header files to be included in your project.
+*.[0-9],"This field is used to match files with any numeric extension. Example: 123.txt, 456.jpg, 789.gif"
+backup*.*,This pattern can be useful when you need to delete all backups in one go before adding new ones. 20 words.
+*.sh,This is a bash source code file for the Bash shell where you can write instructions to be executed in terminal.
+Docker*,This asset is used to run a web application in a container.
+file1.txt notes.txt,"These can be used to store arbitrary text, like notes, lists, or logs. They can also be used as templates for common documents."
+log.log error.log,"Keep track of user actions in our app, to use in debugging and diagnosing user issues. Logs could also be used to gain insight into user behaviour."
+data.csv results.csv,"CSV files are used to store and access large amounts of data in tabular format, allowing for easy parsing and manipulation."
+script.py utility.py,These files contain custom-written code that can automate repetitive tasks in data processing.
+notes.md readme.md,"Markdown files are text files that contain formatting syntax, making it suitable for text-to-HTML conversions. Ease of annotating and organizing notes."
+config.conf settings.conf,"Configure your development environment to allow full productivity, without wasting time on repetitive setups."
+index.html about.html,A HTML file is a formatted text file used to create a web page that will display content on the internet. It can be used to create a homepage for a personal website.
+style.css main.css,CSS files are used to style and format HTML webpages. They contain custom CSS rules thatthe web browser interprets to display the webpage according to the designer's specifications.
+app.js helper.js,"These files contain JavaScript code to add client-side functionality to web pages. Code written in JavaScript allows for form validation, interactive maps, and more."
+main.rs lib.rs,Source files for the Rust programming language. Ideal for creating compiled software applications with high performance needs.
+main.cpp app.rb,C++ and Ruby source files are code files that can be used to build and run complex applications with flexibility and scalability. They allow developers to continuously add new code without starting from scratch.
+server.js settings.json,"A pair of code files used in web development, one to hold logic and the other to hold key-value data, respectively."
+build.gradle main.go,This file contains the necessary code to run automated builds for my Go-based project.
+index.php notes.txt,"A PHP script that reads a text file, finds the longest line, and outputs a new file with each line separated by asterisks."
+todo.txt LICENSE,"The files in this directory are not code, but rather contain documentation and attribution information. These are essential for tracking licensing restrictions and ensuring code and file usage comply with regulations."
+README Dockerfile,"The readme would describe the installation process, while Dockerfile would contain instructions to build and run the application on Docker."
+script.py config.conf,Python script and configuration file to generate monthly invoices for specific clients. Meet local currency requirements and high-level reporting.
+data.csv logfile,"A CSV file can be used to store transaction data, while a log file can help track website security and errors."
+example.txt sample.md,"Basic text and markdown files provide a lightweight means of adding rich text to a web application.
+With simple formatting capabilities, they are perfect for creating blog posts, documentation, and other informational content for websites."
+test.log output.txt,These files are commonly used to track events and perform detailed analysis. Common formats include JSON and CSV.
+/home/user/projects/codebase/source/mainfile.cpp /var/www/html/webapp/public/js/app.bundle.js,Source code with functions for displaying and updating data in a web application. JavaScript handles interactivity and UI/UX logic.
+/home/user/documents,"The user's documents directory is where all user-created files and folders are stored for easy access, allowing for efficient organization of important work and projects."
+/home/user/pictures,"A directory where users can store, organize, and access pictures on their computer. Useful for organizing summer vacation photos."
+/home/user/music,The user's music directory contains all the songs that the user has downloaded or added to the music collection. An excellent way to find and play a specific song.
+/home/user/videos,"A collection of video files saved to the user's account. Allows users to easily access, store, and manage their video assets."
+/home/user/downloads,The downloads directory is where the majority of files are stored after being downloaded from the internet and is commonly organized by file type.
+/home/user/projects,"Users store their work, programs, and other files in this directory. Its purpose is to keep files organized and easy to access."
+/home/user/.ssh,"A user's SSH keys directory is a place where they can store their public and private keys for securing remote connections. In a Linux system, it is often located in the hidden `.ssh` directory in their home folder."
+/home/user/.config,the directory that contains all the settings of the user. It contains all the user's preferences and choices.
+/var/log,A system-specific directory housing corresponding log files. A secure source when finding the root of operational bugs.
+/var/www/html,"The web server root directory stores the files to be hosted and displays the homepage. 
+Assuming the directory contains an index file, navigating to the URL will display its content."
+/etc,The system-configuration-files directory contains all files that define system-wide variables and network settings.
+/etc/ssh,"Control remote access to a Linux server using SSH with these options. Allow multi-factor authentication, prevent root login and more."
+/etc/nginx,Provides directory management for the Nginx file system. Keeps life simple by knowing where the Nginx files are located.
+/usr/local/bin,"This folder holds all binary files for the local users on a company computer, which has security policies in place."
+/usr/local/lib,Imagine an application that imports dependencies from a user's library files directory to determine the appropriate settings for that particular app.
+/tmp,A directory that stores temporary files that can be accessed by other applications to prevent data loss.
+/mnt,"The mounted filesystems directory contains all the mounted filesystems for a machine.
+This allows users to view the currently mounted filesystems and their properties, such as file system type and mount options, providing a comprehensive overview of system resources."
+/dev,Contains information about different devices and their drivers. Useful for understanding hardware configuration.
+/opt,This file is used to document optional software for organization purposes. Collaboration with a team for directory management.
+/srv,Directory contains set of files used by an application to track user activity and customize experience.

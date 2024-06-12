@@ -2,3 +2,4 @@ langchain
 langchain_community
 pypdf
 langchain-text-splitters
+ratelimit
