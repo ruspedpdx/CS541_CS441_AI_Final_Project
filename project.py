@@ -44,7 +44,7 @@ bnb_config = BitsAndBytesConfig(
 )
 
 model = AutoModelForSeq2SeqLM.from_pretrained(checkpoint, quantization_config=bnb_config, device_map={"":0}, trust_remote_code=True)
-model.gradient_checkpointing_enable()
+# model.gradient_checkpointing_enable()
 model = prepare_model_for_kbit_training(model)
 model = get_peft_model(model, lora_config)
 
