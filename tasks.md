@@ -77,3 +77,10 @@
 - Working with Russ on integrating RAG
 - Devise agent architecture
 - Evaluating different configurations
+
+## Final Tasks
+1. FineTune T5-Flan on mix of data from large dataset
+2. Host fine tune and dataset on HuggingFace
+3. FineTune ColBertV2 retrieval model on part of large training set
+4. Create DSPy agent that utilizes dynamic few shot examples with ColbertV2+1B model
+6. Compare T5-Flan and 1B model with context on Grep course problems
