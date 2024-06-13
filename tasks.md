@@ -87,5 +87,5 @@
 4. Find 1B model to work with RAG
 ### David
 5. Create DSPy agent that utilizes dynamic few shot examples with ColbertV2+1B model
-### (Nusrat or Kindy)
+### (Nusrat and Kindy)
 6. Compare T5-Flan and 1B model with context on Grep course problems
