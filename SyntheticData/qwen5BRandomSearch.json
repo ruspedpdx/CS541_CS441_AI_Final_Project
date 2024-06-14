@@ -1,0 +1,27 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "Find the byte offset and file name for the string \"new mysqli\" in the file \/home\/user\/projects\/php_app\/index.php",
+        "rationale": "find the byte offset and file name for the string \"new mysqli\" in the specified file. We need to use the grep command with options that will display the byte offset of the matched string along with the file name. The `-b` option in grep shows the byte offset, and `-H` ensures the file name is displayed, which is useful especially when searching across multiple files or when the output might be redirected.",
+        "answer": "grep -b -H \"new mysqli\" \/home\/user\/projects\/php_app\/index.php"
+      },
+      {
+        "question": "Find lines containing \"#!\/bin\/bash\" in \/home\/user\/.profile and print 1 line of context before and after each match.",
+        "answer": "grep -C 1 \"#!\/bin\/bash\" \/home\/user\/.profile"
+      },
+      {
+        "question": "Find lines in the filesystem file that contain the string \"ext4\", which represents the ext4 filesystem type.",
+        "answer": "grep -e \"ext4\" \/mnt\/filesystem"
+      }
+    ],
+    "signature_instructions": "Given the question produce a grep command",
+    "signature_prefix": "Answer:",
+    "extended_signature_instructions": "Given the question produce a grep command",
+    "extended_signature_prefix": "Answer:"
+  }
+}

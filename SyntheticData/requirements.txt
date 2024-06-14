@@ -3,3 +3,5 @@ pydantic
 notebook
 ipykernel
 python-dotenv
+transformers
+torch
